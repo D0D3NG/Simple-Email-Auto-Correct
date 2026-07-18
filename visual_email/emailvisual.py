@@ -7,7 +7,7 @@ ln = input("What is your Last Name? ").title().lstrip().strip("1" "2" "3" "4" "5
 email = input("What is your Email? ").lower().strip()
 
 #if user inputs an invalid email (eg: typo in email or unsupported email)
-if "@gmail.com" not in email and "@yahoo.com" not in email and "@outlook.com": #supported email domains
+if "@gmail.com" not in email and "@yahoo.com" not in email and "@outlook.com" not in email: #supported email domains
     print("Invalid email, please try again.")
 else: 
     print(f"Account created for {fn} {ln} ({email})") #output when things go as intended
